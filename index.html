@@ -16,232 +16,222 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css"
+      rel="stylesheet"
+    />
+
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <!-- MDB -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"
+    ></script>
   </head>
-
-  <!-- Todo: read the following HTML Todos to create your stunning portfolio website -->
   <body>
-    <div id="top"></div>
+    <!--Main Navigation-->
+  <header>
+    <style>
+      #intro {
+        background-image: url("https://mdbootstrap.com/img/new/fluid/city/018.jpg");
+        height: 100vh;
+      }
 
-    <!-- nav bar -->
-    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light"> -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #e3f2fd;">
+      /* Height for devices larger than 576px */
+      @media (min-width: 992px) {
+        #intro {
+          margin-top: -58.59px;
+        }
+      }
+
+      .navbar .nav-link {
+        color: #fff !important;
+      }
+    </style>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-block" style="z-index: 2000;">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+        <!-- Navbar brand -->
+        <a class="navbar-brand nav-link" href="https://greyisbetter.github.io">
+          <strong>Home</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01"
+          aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarExample01">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" aria-current="page" href="#about">About Me</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="#project" rel="nofollow">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              <a class="nav-link" href="#contact">Contacts</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <!-- nav bar end -->
+    <!-- Navbar -->
 
     <!-- **** Hero Section **** -->
-    <section id="hero" class="jumbotron">
-      <div class="container">
-        <h1 class="hero-title load-hidden">
-          Hi, my name is <span class="text-color-main">Kushan Sharma</span>
-          <br />
-          I'm the Data Analyst.
-        </h1>
-        <p class="hero-cta load-hidden">
-          <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about"
-            >Download Resume</a
-          >
-        </p>
-      </div>
-    </section>
-    <!-- /END Hero Section -->
-
-    <!-- **** About Section **** -->
-    <section id="about">
-      <div class="container">
-        <h2 class="section-title load-hidden">About me</h2>
-        <div class="row about-wrapper">
-          <div class="col-md-6 col-sm-12">
-            <div class="about-wrapper__image load-hidden">
-              <img
-                alt="Profile Image"
-                class="img-fluid rounded shadow-lg"
-                height="auto"
-                width="300px"
-                src="assets/profile.jpg"
-                alt="Profile Image"
-              />
-            </div>
-          </div>
-          <div class="col-md-6 col-sm-12">
-            <div class="about-wrapper__info load-hidden">
-              <p class="about-wrapper__info-text">
-                Versatile individual with experience collecting, 
-                transforming, and organizing data for analysis 
-                to help make informed decisions. Excellent understanding 
-                and proficiency of platforms for effective data analyses, 
-                including SQL, spreadsheets, BI tools (like Power BI and 
-                Tableau) and programming languages like Python and R. 
-                Strong communication, organizational, and analytical skills. 
-                Recently completed the Google Data Analytics Certificate - 
-                a rigorous, hands-on program that covers the entire scope 
-                of the data analysis process.
-              </p>
-              <p class="about-wrapper__info-text">
-                Extra Information about you! like hobbies and your goals.
-              </p>
-            </div>
+    <!-- Background image -->
+    <div id="intro" class="bg-image shadow-2-strong">
+      <div class="mask" style="background-color: rgba(0, 0, 0, 0.8);">
+        <div class="container d-flex align-items-center justify-content-center text-center h-100">
+          <div class="text-white">
+            <h1 class="mb-3">Kushan Sharma</h1>
+            <h3 class="mb-4">The Data Analyst</h3>
+            <a class="btn btn-outline-light btn-lg m-2" href="assets/resume.pdf" target="_blank"
+              role="button">Download Resume</a>
           </div>
         </div>
       </div>
-    </section>
-    <!-- /END About Section -->
+    </div>
+    <!-- Background image -->
+  </header>
+  <!--Main Navigation-->
 
-    <!-- **** Projects Section **** -->
-    <section id="projects">
-      <div class="container">
-        <div class="project-wrapper">
-          <h2 class="section-title dark-blue-text">Projects</h2>
-
-          <!-- Notice: each .row is a project -->
-          <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Bellabeat</h3>
-                <div>
-                  <p class="mb-4">
-                    How Can a Wellness Technology Company Play It 
-                    Smart? Focus on one of Bellabeat’s products and 
-                    analyze smart device data to gain insight into 
-                    how consumers are using their smart devices.
-                  </p>
-                </div>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn cta-btn--hero"
-                  href="#!"
-                >
-                  View Project
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="#!" target="_blank">
-                  <div
-                    data-tilt
-                    data-tilt-max="4"
-                    data-tilt-glare="true"
-                    data-tilt-max-glare="0.5"
-                    class="thumbnail rounded js-tilt"
-                  >
-                    <img
-                      alt="Project Image"
-                      class="img-fluid"
-                      src="assets/bellabeat.png"
-                    />
-                  </div>
-                </a>
-              </div>
+  <!--Main layout-->
+  <main class="mt-5">
+    <div class="container">
+      <!--Section: Content-->
+      <section id="about">
+        <div class="row">
+          <div class="col-md-6 gx-5 mb-4">
+            <div class="bg-image hover-overlay ripple shadow-2-strong rounded-5" data-mdb-ripple-color="light">
+              <img src="assets/profile.jpg" class="img-fluid" />
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </a>
             </div>
           </div>
-          <!-- /END Project -->
 
-          <!-- Notice: each .row is a project -->
-          <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Cyclistic Bike Share</h3>
-                <div>
-                  <p class="mb-4">
-                    How Does a Bike-Share Navigate Speedy Success? 
-                    Analyze how casual riders and annual members use 
-                    Cyclistic bikes differently.
-                  </p>
-                </div>
-                <a
-                  rel="noreferrer"
-                  class="cta-btn cta-btn--hero"
-                  href="https://github.com/greyisbetter/Cyclistic-Bike-Share"
-                >
-                  View Project
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="#!" target="_blank">
-                  <div
-                    data-tilt
-                    data-tilt-max="4"
-                    data-tilt-glare="true"
-                    data-tilt-max-glare="0.5"
-                    class="thumbnail rounded js-tilt"
-                  >
-                    <img
-                      alt="Project Image"
-                      class="img-fluid"
-                      src="assets/cyclistic.png"
-                    />
-                  </div>
-                </a>
-              </div>
-            </div>
+          <div class="col-md-6 gx-5 mb-4">
+            <h2><strong>-- About Me</strong></h2>
+            <p class="text-muted">
+              What's up! Welcome to my portfolio websites.
+            </p>
+            <p><strong>A brief Introduction</strong></p>
+            <p class="text-muted">
+              Versatile individual with experience collecting, transforming, and organizing data for analysis to help make informed decisions. Excellent understanding and proficiency of platforms for effective data analyses, including SQL, spreadsheets, BI tools (like Power BI and Tableau) and programming languages like Python and R. Strong communication, organizational, and analytical skills. Recently completed the Google Data Analytics Certificate - a rigorous, hands-on program that covers the entire scope of the data analysis process.
+            </p>
           </div>
-          <!-- /END Project -->
         </div>
-      </div>
-    </section>
-    <!-- /END Projects Section -->
+      </section>
+      <!--Section: Content-->
+
+      <hr class="my-5" />
+
+      <!--Section: Content-->
+      <section id="project" class="text-center">
+        <h4 class="mb-5"><strong>Recent Projects</strong></h4>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-12 mb-4">
+            <div class="card">
+              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img src="assets/bellabeat.png" class="img-fluid" />
+                <a href="#!">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Bellabeat Fitness Tracker</h5>
+                <p class="card-text">
+                  How Can a Wellness Technology Company Play It 
+                  Smart? Focus on one of Bellabeat’s products and 
+                  analyze smart device data to gain insight into 
+                  how consumers are using their smart devices.
+                </p>
+                <a href="https://github.com/greyisbetter/Bellabeat-Fitness-Tracker" class="btn btn-primary">View Project</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img src="assets/cyclistic.png" class="img-fluid" />
+                <a href="#!">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Cyclistic Bike Share</h5>
+                <p class="card-text">
+                  How Does a Bike-Share Navigate Speedy Success? 
+                  Analyze how casual riders and annual members use 
+                  Cyclistic bikes differently.
+                </p>
+                <a href="https://github.com/greyisbetter/Cyclistic-Bike-Share" class="btn btn-primary">View Project</a>
+              </div>
+            </div>
+          </div>
+      <!--Section: Content-->
+
+    <hr class="m-5" />
 
     <!-- **** Contact Section **** -->
-    <section id="contact">
-      <div class="container">
-        <h2 class="section-title">Thank you!</h2>
+    <!--Section: Content-->
+    <section id="contact" class="mb-5">
+      <h4 class="mb-5 text-center"><strong>Contact Me</strong></h4>
+      <div class="text-center py-4 align-items-center">
+      <p>Feel free to reach out to me via any of the social media outlets below with your questions and comments!</p> 
+      </div>
+      <div class="row d-flex justify-content-center">
+          <div class="col-md-6">
+          <a
+            rel="noreferrer"
+            target="_blank"
+            class="btn btn-primary btn-block mb-4"
+            href="mailto:kushansharma1@gmail.com"
+            >Send Email</a
+          >
+
+        </div>
       </div>
     </section>
     <!-- /END Contact Section -->
 
-    <!-- **** Footer Section **** -->
-    <footer class="footer navbar-static-bottom">
-      <div class="container">
-        <a rel="noreferrer" href="#top" class="back-to-top">
-          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
-        </a>
-        <div class="social-links">
-          <a rel="noreferrer" href="https://twitter.com/unoim_ks">
-            <i class="fa fa-twitter fa-inverse"></i>
-          </a>
-          <a rel="noreferrer" href="https://www.linkedin.com/in/kushan-sharma-250578221/">
-            <i class="fa fa-linkedin fa-inverse"></i>
-          </a>
-          <a rel="noreferrer" href="https://github.com/greyisbetter">
-            <i class="fa fa-github fa-inverse"></i>
-          </a>
-        </div>
+    <div class="text-center py-4 align-items-center">
+      <a href="https://www.linkedin.com/in/kushan-sharma-250578221/" class="btn btn-primary m-1" role="button" rel="nofollow"
+        target="_blank">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="https://twitter.com/unoim_ks" class="btn btn-primary m-1" role="button" rel="nofollow"
+        target="_blank">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="https://github.com/greyisbetter" class="btn btn-primary m-1" role="button" rel="nofollow"
+        target="_blank">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
 
-        <hr />
 
-        <!-- Notice: if you want to give me some credit, it will be huge for me! if not, put your data on it -->
-        <p class="footer__text">
-          Copyright © 2022 - Kushan Sharma
-        </p>
-        
-      </div>
-    </footer>
-    <!-- /END Footer Section -->
-
-    <script defer type="module" src="index.js"></script>
-  </body>
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2022 Copyright:
+      <a class="text-dark" href="https://mdbootstrap.com/">Kushan Sharma</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!--Footer-->
+</body>
 </html>
