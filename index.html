@@ -1,236 +1,141 @@
-<!DOCTYPE html>
-<html lang="en" class="sr">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" type="image/png" href="assets/logo.png" />
-
-    <!-- Todo: put here your site title -->
-    <title>Portfolio | Kushan Sharma</title>
-    <!-- Todo: add some coding keywords below - e.g: (javascript, yourusername, etc) -->
-    <meta name="keywords" content="kushansharma, Kushan Sharma, skill" />
-    <!-- Todo: improve your SEO by adding a small description of you -->
-    <meta name="description" content="Kushan Sharma | Data Analyst" />
-
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-
-    <!-- Font Awesome -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-      rel="stylesheet"
-    />
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- MDB -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css"
-      rel="stylesheet"
-    />
-
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-    <!-- MDB -->
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"
-    ></script>
-  </head>
-  <body>
-    <!--Main Navigation-->
-  <header>
-    <style>
-      #intro {
-        background-image: url("https://mdbootstrap.com/img/new/fluid/city/018.jpg");
-        height: 100vh;
-      }
-
-      /* Height for devices larger than 576px */
-      @media (min-width: 992px) {
-        #intro {
-          margin-top: -58.59px;
-        }
-      }
-
-      .navbar .nav-link {
-        color: #fff !important;
-      }
-    </style>
-
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-block" style="z-index: 2000;">
-      <div class="container-fluid">
-        <!-- Navbar brand -->
-        <a class="navbar-brand nav-link" href="https://greyisbetter.github.io">
-          <strong>Home</strong>
-        </a>
-        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01"
-          aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="fas fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarExample01">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item active">
-              <a class="nav-link" aria-current="page" href="#about">About Me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#project" rel="nofollow">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contacts</a>
-            </li>
-          </ul>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Portfolio | Kushan S.</title>
+  <link rel="icon" href="path/to/logo.png" type="image/png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    /* use a custom font */
+    body {
+        font-family: 'Montserrat', sans-serif;
+    }
+</style>
+<!-- include the Montserrat font -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="main.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#" class="brand-logo">Grey Is better</a>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
         </div>
-      </div>
     </nav>
-    <!-- Navbar -->
 
-    <!-- **** Hero Section **** -->
-    <!-- Background image -->
-    <div id="intro" class="bg-image shadow-2-strong">
-      <div class="mask" style="background-color: rgba(0, 0, 0, 0.8);">
-        <div class="container d-flex align-items-center justify-content-center text-center h-100">
-          <div class="text-white">
-            <h1 class="mb-3">Kushan Sharma</h1>
-            <h3 class="mb-4">The Data Analyst</h3>
-            <a class="btn btn-outline-light btn-lg m-2" href="https://github.com/greyisbetter/greyisbetter.github.io/blob/main/assets/resume.pdf" target="_blank"
-              role="button">Download Resume</a>
-          </div>
-        </div>
+    <header id="home" style="background-image: url('path/to/bgr-img1.jpeg'); background-size: cover; height: 600px; display: flex; align-items: center; justify-content: center;">
+      <div style="background-color: rgba(255, 255, 255, 0.8); padding: 20px; border-radius: 10px; text-align: center;">
+        <h1 style="font-size: 48px; font-weight: bold;">Kushan Sharma</h1>
+        <h3 style="font-size: 36px;">Data Scientist</h3>
+        <a href="path/to/Kushan Sharma- Data Analyst.pdf" style="display: inline-block; background-color: #fd5151; color: #fff; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-size: 18px; margin-top: 20px;">Resume</a>
       </div>
-    </div>
-    <!-- Background image -->
-  </header>
-  <!--Main Navigation-->
-
-  <!--Main layout-->
-  <main class="mt-5">
-    <div class="container">
-      <!--Section: Content-->
-      <section id="about">
-        <div class="row">
-          <div class="col-md-6 gx-5 mb-4">
-            <!-- <div class="bg-image hover-overlay ripple shadow-2-strong rounded-5" data-mdb-ripple-color="light"> -->
-              <img src="assets/profile.jpg" class="img-fluid" width=350 height=350/>
-                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-            </div>
-          </div>
-          <!-- </div> -->
-
-          <div class="col-md-6 gx-5 mb-4">
-            <h2><strong>-- About Me</strong></h2>
-            <p class="text-muted">
-              What's up! Welcome to my portfolio websites.
-            </p>
-            <p><strong>A brief Introduction</strong></p>
-            <p class="text-muted">
-              Versatile individual with experience collecting, transforming, and organizing data for analysis to help make informed decisions. Excellent understanding and proficiency of platforms for effective data analyses, including SQL, spreadsheets, BI tools (like Power BI and Tableau) and programming languages like Python and R. Strong communication, organizational, and analytical skills. Recently completed the Google Data Analytics Certificate - a rigorous, hands-on program that covers the entire scope of the data analysis process.
-            </p>
-          </div>
+    </header>
+    
+    <!-- <a href="#a"></a> -->
+    <section id="about" style="padding: 50px;">
+      <div style="max-width: 900px; margin: auto; display: flex; justify-content: space-between; align-items: center;">
+        <div style="flex-basis: 40%; margin-right: 50px;">
+          <img src="path/to/pro_homelander.jpg" alt="About Picture" style="width: 100%; height: 100%; object-fit: contain; object-position: center;">
         </div>
-      </section>
-      <!--Section: Content-->
-
-      <hr class="my-5" />
-
-      <!--Section: Content-->
-      <section id="project" class="text-center">
-        <h4 class="mb-5"><strong>Recent Projects</strong></h4>
-
-        <div class="row">
-          <div class="col-lg-4 col-md-12 mb-4">
-            <div class="card">
-              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                <img src="assets/bellabeat.png" class="img-fluid" />
-                <a href="#!">
-                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                </a>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Bellabeat Fitness Tracker</h5>
-                <p class="card-text">
-                  How Can a Wellness Technology Company Play It 
-                  Smart? Focus on one of Bellabeat’s products and 
-                  analyze smart device data to gain insight into 
-                  how consumers are using their smart devices.
-                </p>
-                <a href="https://github.com/greyisbetter/Bellabeat-Fitness-Tracker" class="btn btn-primary">View Project</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card">
-              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                <img src="assets/cyclistic.png" class="img-fluid" />
-                <a href="#!">
-                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                </a>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Cyclistic Bike Share</h5>
-                <p class="card-text">
-                  How Does a Bike-Share Navigate Speedy Success? 
-                  Analyze how casual riders and annual members use 
-                  Cyclistic bikes differently.
-                </p>
-                <a href="https://github.com/greyisbetter/Cyclistic-Bike-Share" class="btn btn-primary">View Project</a>
-              </div>
-            </div>
-          </div>
-      <!--Section: Content-->
-
-    <hr class="m-5" />
-
-    <!-- **** Contact Section **** -->
-    <!--Section: Content-->
-    <section id="contact" class="mb-5">
-      <h4 class="mb-5 text-center"><strong>Contact Me</strong></h4>
-      <div class="text-center py-4 align-items-center">
-      <p>Feel free to reach out to me via any of the social media outlets below with your questions and comments!</p> 
-      </div>
-      <div class="row d-flex justify-content-center">
-          <div class="col-md-6">
-          <a
-            rel="noreferrer"
-            target="_blank"
-            class="btn btn-primary btn-block mb-4"
-            href="mailto:kushansharma1@gmail.com"
-            >Send Email</a
-          >
-
+        <div style="flex-basis: 50%;">
+          <h2 style="font-size: 36px; font-weight: bold; margin-bottom: 30px;">About Me</h2>
+          <p style="font-size: 18px; line-height: 1.5; margin-bottom: 20px;">I'm a data scientist with expertise in statistical analysis, data modeling, and machine learning. I've worked across a variety of industries and have a strong track record of using data to deliver valuable insights that drive informed decision-making. I'm skilled in a range of programming languages and tools, including Python, SQL, Tableau, and Excel.</p>
+          <p style="font-size: 18px; line-height: 1.5; margin-bottom: 20px;">In addition to my technical abilities, I have excellent communication and collaboration skills, and I'm comfortable presenting complex data insights to stakeholders at all levels of an organization. I'm passionate about using data to solve problems and drive measurable results, whether that's optimizing marketing campaigns, improving operational efficiency, or analyzing customer behavior</p>
+          <p style="font-size: 18px; line-height: 1.5;">If you're looking for a data scientist who can help your organization harness the power of data to achieve its goals, please don't hesitate to reach out.</p>
         </div>
       </div>
     </section>
-    <!-- /END Contact Section -->
-
-    <div class="text-center py-4 align-items-center">
-      <a href="https://www.linkedin.com/in/kushan-sharma-250578221/" class="btn btn-primary m-1" role="button" rel="nofollow"
-        target="_blank">
-        <i class="fab fa-linkedin-in"></i>
-      </a>
-      <a href="https://twitter.com/unoim_ks" class="btn btn-primary m-1" role="button" rel="nofollow"
-        target="_blank">
-        <i class="fab fa-twitter"></i>
-      </a>
-      <a href="https://github.com/greyisbetter" class="btn btn-primary m-1" role="button" rel="nofollow"
-        target="_blank">
-        <i class="fab fa-github"></i>
-      </a>
+    
+    
+    <section id="services" class="service-section">
+      <h2>Services</h2>
+      <div class="service-container">
+      <div class="service">
+        <h3>Data Analysis and Visualization</h3>
+        <p>Using advanced analytical tools and techniques, I can help you gain insights from your data to inform better decision-making. I can also create visualizations that help communicate these insights to your stakeholders.</p>
+      </div>
+      <div class="service">
+        <h3>Predictive Modeling and Machine Learning</h3>
+        <p>With my expertise in machine learning algorithms and statistical modeling, I can build predictive models that help you anticipate customer behavior, forecast trends, and optimize business processes.</p>
+      </div>
+      <div class="service">
+        <h3>Data Cleaning and Preparation</h3>
+        <p>As any data scientist knows, cleaning and preparing data is a crucial first step in any analysis or modeling project. I can help you ensure your data is properly formatted, cleaned, and prepared for analysis.</p>
+      </div>
+      <div class="service">
+        <h3>Data Storytelling</h3>
+        <p>Communicating insights from data to non-technical stakeholders is a critical part of any data-driven project. I can help you develop compelling narratives and visualizations that help tell the story behind your data.</p>
+      </div>
     </div>
+    </section>
 
+    <section id="portfolio" class="portfolio-section">
+      <h2>Portfolio</h2>
+      <div class="portfolio-container">
+        <div class="portfolio-item"><a href="https://www.kaggle.com/code/greyisbetter/customer-churn-predition">
+          <img src="path/to/customer_churn.png" alt="Portfolio Item 3"></a>
+          <h3>Customer Churn Prediction</h3>
+          <p>This project predicts customer churn using machine learning models to help businesses identify and retain customers.</p>
+        </div>
+        <div class="portfolio-item"><a href="https://public.tableau.com/views/PeopleAnalytics_16795734025670/Dashboard?:language=en-US&:display_count=n&:origin=viz_share_link">
+          <img src="path/to/people_analytics.png" alt="Portfolio Item 1"></a>
+          <h3>People Analytics</h3>
+          <p>Analyzing employee performance, engagement and retention using HR data to provide actionable insights for the organization.</p>
+        </div>
+        <div class="portfolio-item"><a href="https://public.tableau.com/views/SalesAnalysisDashboard_16792905557610/Dashboard?:language=en-US&:display_count=n&:origin=viz_share_link">
+          <img src="path/to/sales_analysis.png" alt="Portfolio Item 2"></a>
+          <h3>Sales Analysis</h3>
+          <p>This project involves analyzing sales data to gain insights on revenue trends, top-performing products, and customer behavior to inform business decisions.</p>
+        </div>
+      </div>
+    </section>
 
-    <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-      © 2022 Copyright:
-      <a class="text-dark" href="https://mdbootstrap.com/">Kushan Sharma</a>
-    </div>
-    <!-- Copyright -->
-  </footer>
-  <!--Footer-->
+    <section id="certifications" style="padding: 50px;">
+      <div style="max-width: 900px; margin: auto;">
+        <h2 style="font-size: 36px; font-weight: bold; margin-bottom: 30px;">Certifications</h2>
+        <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+          <div style="flex-basis: calc(33.33% - 20px); margin-right: 20px; margin-bottom: 20px; border: 1px solid #ddd; padding: 10px;">
+            <a href="https://www.coursera.org/account/accomplishments/professional-cert/YSX7UX54VC8L"><img src="path/to/google_certificate.png" alt="Certification 1" style="width: 100%; height: 100%; object-fit: contain; object-position: center;"></a> 
+          </div>          
+        </div>
+      </div>
+    </section>
+    
+    <footer style="background-color: #F5F5F5; padding: 20px;">
+      <div id="contact" style="display: flex; justify-content: space-between; align-items: center; max-width: 900px; margin: auto;">
+        <div>
+          <h3>Get in Touch</h3>
+          <p>Email: kushansharma1@gmail.com</p>
+          <p>Phone: +91 7634002955</p>
+        </div>
+        <div>
+          <h3>Connect with Me</h3>
+          <ul style="list-style: none; display: flex; justify-content: space-between; margin: 0; padding: 0;">
+            <li><a href="https://github.com/greyisbetter"><i class="fab fa-github-square" style="font-size:24px;color:black" ></i></a></li>
+            <li><a href="https://www.kaggle.com/greyisbetter"><img src="path/to/kaggle_icon.png" alt="Kaggle icon" width="20" height="20"></a></li>
+            <li><a href="https://public.tableau.com/app/profile/kushan.sharma"><img src="path/to/tableau_icon.png" alt="Tableau icon" width="20" height="20"></a></li>
+            <li><a href="https://www.linkedin.com/in/kushan-sharma-250578221/"><i class="fab fa-linkedin" style="font-size:24px;color:#0648ff;" ></i></a></li>
+            <li><a href="https://twitter.com/unoim_ks"><i class="fab fa-twitter" style="font-size:24px;color:#4674f3;"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div style="max-width: 900px; margin: auto; text-align: center; margin-top: 20px;">
+        <p>&copy; 2023 Kushan Sharma. All rights reserved.</p>
+      </div>
+    </footer>    
+    
+    
 </body>
+
 </html>
